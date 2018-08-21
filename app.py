@@ -6,7 +6,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:roottoor@localhos
 
 db = SQLAlchemy(app)
 
-class Usser(db.Model):
+class User(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     username = db.Column(db.String(80))
     email = db.Column(db.String(100), unique = True)
